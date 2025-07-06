@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Code Life Journey</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f2f2f2;
+      padding: 2rem;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p.subtext {
+      text-align: center;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: #0a033f;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+    }
+
+    .container {
+      padding: 10px 40px;
+      position: relative;
+      background-color: inherit;
+      width: 50%;
+    }
+
+    .container::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -13px;
+      background-color: white;
+      border: 4px solid orange;
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .left {
+      left: 0;
+    }
+
+    .right {
+      left: 50%;
+    }
+
+    .right::after {
+      left: -13px;
+    }
+
+    .content {
+      padding: 20px 30px;
+      background-color: orange;
+      position: relative;
+      border-radius: 8px;
+    }
+
+    .content h3 {
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+    }
+
+    .content p {
+      font-size: 0.95rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+
+      .container::after {
+        left: 60px;
+      }
+
+      .right {
+        left: 0%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>💻 Code Life Journey</h2>
+  <p class="subtext">A timeline of my learning, building, and growing in the world of code.</p>
+
+  <div class="timeline">
+
+    <div class="container right">
+      <div class="content">
+        <h3>🚀 Self Employed</h3>
+        <p><strong>Full Stack Developer</strong><br>Oct 2021 – Present</p>
+      </div>
+    </div>
+
+    <div class="container left">
+      <div class="content">
+        <h3>🛠️ Mapstreak Flyseas</h3>
+        <p><strong>Web Developer | Internship</strong><br>June 2021 – Dec 2021</p>
+      </div>
+    </div>
+
+    <div class="container right">
+      <div class="content">
+        <h3>🌐 The Spark Foundation</h3>
+        <p><strong>Website Developer | Internship</strong><br>May 2021 – June 2021</p>
+      </div>
+    </div>
+
+    <div class="container left">
+      <div class="content">
+        <h3>📱 The Spark Foundation</h3>
+        <p><strong>Mobile App Developer | Internship</strong><br>April 2021 – May 2021</p>
+      </div>
+    </div>
+
+    <div class="container right">
+      <div class="content">
+        <h3>📝 Frshr Technologies</h3>
+        <p><strong>WordPress Developer | Internship</strong><br>April 2021</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
